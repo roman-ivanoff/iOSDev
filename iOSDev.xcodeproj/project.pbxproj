@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDB12B4D2AFC2E0300890257 /* PreloaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B4C2AFC2E0300890257 /* PreloaderContentView.swift */; };
+		FDB12B502AFC302F00890257 /* Applyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B4F2AFC302F00890257 /* Applyable.swift */; };
+		FDB12B532AFC366F00890257 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B522AFC366F00890257 /* MainViewController.swift */; };
+		FDB12B572AFC3AA100890257 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B562AFC3AA100890257 /* MainContentView.swift */; };
 		FDD6E6432AFC221600EA52F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E6422AFC221600EA52F0 /* AppDelegate.swift */; };
 		FDD6E6452AFC221600EA52F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E6442AFC221600EA52F0 /* SceneDelegate.swift */; };
-		FDD6E6472AFC221600EA52F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E6462AFC221600EA52F0 /* ViewController.swift */; };
+		FDD6E6472AFC221600EA52F0 /* PreloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E6462AFC221600EA52F0 /* PreloaderViewController.swift */; };
 		FDD6E64C2AFC221900EA52F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD6E64B2AFC221900EA52F0 /* Assets.xcassets */; };
 		FDD6E64F2AFC221900EA52F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD6E64D2AFC221900EA52F0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FDB12B4C2AFC2E0300890257 /* PreloaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderContentView.swift; sourceTree = "<group>"; };
+		FDB12B4F2AFC302F00890257 /* Applyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applyable.swift; sourceTree = "<group>"; };
+		FDB12B522AFC366F00890257 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FDB12B562AFC3AA100890257 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		FDD6E63F2AFC221600EA52F0 /* iOSDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD6E6422AFC221600EA52F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD6E6442AFC221600EA52F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDD6E6462AFC221600EA52F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDD6E6462AFC221600EA52F0 /* PreloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderViewController.swift; sourceTree = "<group>"; };
 		FDD6E64B2AFC221900EA52F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD6E64E2AFC221900EA52F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDD6E6502AFC221900EA52F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +62,48 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		FDB12B4B2AFC2DD900890257 /* Preloader */ = {
+			isa = PBXGroup;
+			children = (
+				FDB12B542AFC3A8A00890257 /* View */,
+				FDD6E6462AFC221600EA52F0 /* PreloaderViewController.swift */,
+			);
+			path = Preloader;
+			sourceTree = "<group>";
+		};
+		FDB12B4E2AFC302100890257 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FDB12B4F2AFC302F00890257 /* Applyable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FDB12B512AFC365C00890257 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FDB12B552AFC3A9200890257 /* View */,
+				FDB12B522AFC366F00890257 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FDB12B542AFC3A8A00890257 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDB12B4C2AFC2E0300890257 /* PreloaderContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDB12B552AFC3A9200890257 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDB12B562AFC3AA100890257 /* MainContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FDD6E6362AFC221500EA52F0 = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +123,11 @@
 		FDD6E6412AFC221600EA52F0 /* iOSDev */ = {
 			isa = PBXGroup;
 			children = (
+				FDB12B512AFC365C00890257 /* Main */,
+				FDB12B4B2AFC2DD900890257 /* Preloader */,
+				FDB12B4E2AFC302100890257 /* Protocols */,
 				FDB12B4A2AFC2C2200890257 /* Resources */,
 				FDB12B492AFC2BEA00890257 /* Supporting Files */,
-				FDD6E6462AFC221600EA52F0 /* ViewController.swift */,
 			);
 			path = iOSDev;
 			sourceTree = "<group>";
@@ -172,9 +224,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDD6E6472AFC221600EA52F0 /* ViewController.swift in Sources */,
+				FDD6E6472AFC221600EA52F0 /* PreloaderViewController.swift in Sources */,
+				FDB12B4D2AFC2E0300890257 /* PreloaderContentView.swift in Sources */,
 				FDD6E6432AFC221600EA52F0 /* AppDelegate.swift in Sources */,
+				FDB12B532AFC366F00890257 /* MainViewController.swift in Sources */,
 				FDD6E6452AFC221600EA52F0 /* SceneDelegate.swift in Sources */,
+				FDB12B502AFC302F00890257 /* Applyable.swift in Sources */,
+				FDB12B572AFC3AA100890257 /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
