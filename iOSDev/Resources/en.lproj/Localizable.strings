@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  iOSDev
+
+  Created by Roman Ivanov on 09.11.2023.
+  
+*/
+
+"all_events" = "All Events";
+"detail_events" = "Detail Events";

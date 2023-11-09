@@ -9,11 +9,13 @@ import UIKit
 
 class MainViewController: UIViewController {
   private let contentView = MainContentView()
+  let test = TestData()
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     setupNavbar()
+    test.generate()
   }
 
   override func loadView() {

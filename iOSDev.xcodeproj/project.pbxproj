@@ -11,6 +11,19 @@
 		FDB12B502AFC302F00890257 /* Applyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B4F2AFC302F00890257 /* Applyable.swift */; };
 		FDB12B532AFC366F00890257 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B522AFC366F00890257 /* MainViewController.swift */; };
 		FDB12B572AFC3AA100890257 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B562AFC3AA100890257 /* MainContentView.swift */; };
+		FDB12B612AFCF49F00890257 /* PilatExtended-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDB12B592AFCF49E00890257 /* PilatExtended-Thin.ttf */; };
+		FDB12B622AFCF49F00890257 /* PilatExtended-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDB12B5A2AFCF49E00890257 /* PilatExtended-DemiBold.ttf */; };
+		FDB12B632AFCF49F00890257 /* PilatExtended-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDB12B5B2AFCF49E00890257 /* PilatExtended-Regular.ttf */; };
+		FDB12B642AFCF49F00890257 /* PilatExtended-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDB12B5C2AFCF49F00890257 /* PilatExtended-Heavy.ttf */; };
+		FDB12B652AFCF49F00890257 /* PilatExtended-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDB12B5D2AFCF49F00890257 /* PilatExtended-Black.ttf */; };
+		FDB12B662AFCF49F00890257 /* PilatExtended-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDB12B5E2AFCF49F00890257 /* PilatExtended-Book.ttf */; };
+		FDB12B672AFCF49F00890257 /* PilatExtended-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDB12B5F2AFCF49F00890257 /* PilatExtended-Light.ttf */; };
+		FDB12B682AFCF49F00890257 /* PilatExtended-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDB12B602AFCF49F00890257 /* PilatExtended-Bold.ttf */; };
+		FDB12B6B2AFCF59400890257 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B6A2AFCF59400890257 /* GameModel.swift */; };
+		FDB12B6D2AFCF6B000890257 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B6C2AFCF6B000890257 /* TeamModel.swift */; };
+		FDB12B702AFCF7A100890257 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDB12B722AFCF7A100890257 /* Localizable.strings */; };
+		FDB12B742AFCF8BD00890257 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B732AFCF8BD00890257 /* StatisticModel.swift */; };
+		FDB12B762AFCFC1400890257 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B752AFCFC1400890257 /* TestData.swift */; };
 		FDD6E6432AFC221600EA52F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E6422AFC221600EA52F0 /* AppDelegate.swift */; };
 		FDD6E6452AFC221600EA52F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E6442AFC221600EA52F0 /* SceneDelegate.swift */; };
 		FDD6E6472AFC221600EA52F0 /* PreloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E6462AFC221600EA52F0 /* PreloaderViewController.swift */; };
@@ -23,6 +36,19 @@
 		FDB12B4F2AFC302F00890257 /* Applyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applyable.swift; sourceTree = "<group>"; };
 		FDB12B522AFC366F00890257 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FDB12B562AFC3AA100890257 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		FDB12B592AFCF49E00890257 /* PilatExtended-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PilatExtended-Thin.ttf"; sourceTree = "<group>"; };
+		FDB12B5A2AFCF49E00890257 /* PilatExtended-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PilatExtended-DemiBold.ttf"; sourceTree = "<group>"; };
+		FDB12B5B2AFCF49E00890257 /* PilatExtended-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PilatExtended-Regular.ttf"; sourceTree = "<group>"; };
+		FDB12B5C2AFCF49F00890257 /* PilatExtended-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PilatExtended-Heavy.ttf"; sourceTree = "<group>"; };
+		FDB12B5D2AFCF49F00890257 /* PilatExtended-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PilatExtended-Black.ttf"; sourceTree = "<group>"; };
+		FDB12B5E2AFCF49F00890257 /* PilatExtended-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PilatExtended-Book.ttf"; sourceTree = "<group>"; };
+		FDB12B5F2AFCF49F00890257 /* PilatExtended-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PilatExtended-Light.ttf"; sourceTree = "<group>"; };
+		FDB12B602AFCF49F00890257 /* PilatExtended-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PilatExtended-Bold.ttf"; sourceTree = "<group>"; };
+		FDB12B6A2AFCF59400890257 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		FDB12B6C2AFCF6B000890257 /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		FDB12B712AFCF7A100890257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FDB12B732AFCF8BD00890257 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
+		FDB12B752AFCFC1400890257 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		FDD6E63F2AFC221600EA52F0 /* iOSDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD6E6422AFC221600EA52F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD6E6442AFC221600EA52F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +83,9 @@
 		FDB12B4A2AFC2C2200890257 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FDB12B582AFCF46100890257 /* Fonts */,
 				FDD6E64B2AFC221900EA52F0 /* Assets.xcassets */,
+				FDB12B722AFCF7A100890257 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -104,6 +132,32 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FDB12B582AFCF46100890257 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FDB12B5D2AFCF49F00890257 /* PilatExtended-Black.ttf */,
+				FDB12B602AFCF49F00890257 /* PilatExtended-Bold.ttf */,
+				FDB12B5E2AFCF49F00890257 /* PilatExtended-Book.ttf */,
+				FDB12B5A2AFCF49E00890257 /* PilatExtended-DemiBold.ttf */,
+				FDB12B5C2AFCF49F00890257 /* PilatExtended-Heavy.ttf */,
+				FDB12B5F2AFCF49F00890257 /* PilatExtended-Light.ttf */,
+				FDB12B5B2AFCF49E00890257 /* PilatExtended-Regular.ttf */,
+				FDB12B592AFCF49E00890257 /* PilatExtended-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FDB12B692AFCF58500890257 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDB12B6A2AFCF59400890257 /* GameModel.swift */,
+				FDB12B6C2AFCF6B000890257 /* TeamModel.swift */,
+				FDB12B732AFCF8BD00890257 /* StatisticModel.swift */,
+				FDB12B752AFCFC1400890257 /* TestData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FDD6E6362AFC221500EA52F0 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +179,7 @@
 			children = (
 				FDB12B512AFC365C00890257 /* Main */,
 				FDB12B4B2AFC2DD900890257 /* Preloader */,
+				FDB12B692AFCF58500890257 /* Model */,
 				FDB12B4E2AFC302100890257 /* Protocols */,
 				FDB12B4A2AFC2C2200890257 /* Resources */,
 				FDB12B492AFC2BEA00890257 /* Supporting Files */,
@@ -192,7 +247,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD6E64F2AFC221900EA52F0 /* LaunchScreen.storyboard in Resources */,
+				FDB12B612AFCF49F00890257 /* PilatExtended-Thin.ttf in Resources */,
+				FDB12B702AFCF7A100890257 /* Localizable.strings in Resources */,
+				FDB12B642AFCF49F00890257 /* PilatExtended-Heavy.ttf in Resources */,
+				FDB12B672AFCF49F00890257 /* PilatExtended-Light.ttf in Resources */,
+				FDB12B622AFCF49F00890257 /* PilatExtended-DemiBold.ttf in Resources */,
+				FDB12B682AFCF49F00890257 /* PilatExtended-Bold.ttf in Resources */,
+				FDB12B632AFCF49F00890257 /* PilatExtended-Regular.ttf in Resources */,
+				FDB12B662AFCF49F00890257 /* PilatExtended-Book.ttf in Resources */,
 				FDD6E64C2AFC221900EA52F0 /* Assets.xcassets in Resources */,
+				FDB12B652AFCF49F00890257 /* PilatExtended-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,11 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB12B742AFCF8BD00890257 /* StatisticModel.swift in Sources */,
+				FDB12B762AFCFC1400890257 /* TestData.swift in Sources */,
 				FDD6E6472AFC221600EA52F0 /* PreloaderViewController.swift in Sources */,
 				FDB12B4D2AFC2E0300890257 /* PreloaderContentView.swift in Sources */,
+				FDB12B6D2AFCF6B000890257 /* TeamModel.swift in Sources */,
 				FDD6E6432AFC221600EA52F0 /* AppDelegate.swift in Sources */,
 				FDB12B532AFC366F00890257 /* MainViewController.swift in Sources */,
 				FDD6E6452AFC221600EA52F0 /* SceneDelegate.swift in Sources */,
+				FDB12B6B2AFCF59400890257 /* GameModel.swift in Sources */,
 				FDB12B502AFC302F00890257 /* Applyable.swift in Sources */,
 				FDB12B572AFC3AA100890257 /* MainContentView.swift in Sources */,
 			);
@@ -237,6 +305,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		FDB12B722AFCF7A100890257 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB12B712AFCF7A100890257 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		FDD6E64D2AFC221900EA52F0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

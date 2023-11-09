@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PilatExtended-Black.ttf</string>
+		<string>PilatExtended-Bold.ttf</string>
+		<string>PilatExtended-Book.ttf</string>
+		<string>PilatExtended-DemiBold.ttf</string>
+		<string>PilatExtended-Heavy.ttf</string>
+		<string>PilatExtended-Light.ttf</string>
+		<string>PilatExtended-Regular.ttf</string>
+		<string>PilatExtended-Thin.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
