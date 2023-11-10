@@ -15,8 +15,8 @@ class MainViewController: UIViewController {
     super.viewDidLoad()
 
     setupNavbar()
-    contentView.tableView.delegate = self
-    contentView.tableView.dataSource = self
+    contentView.collectionView.delegate = self
+    contentView.collectionView.dataSource = self
   }
 
   override func loadView() {
@@ -45,6 +45,15 @@ extension MainViewController: UICollectionViewDelegate {
     } else {
       return UICollectionReusableView()
     }
+  }
+
+  func collectionView(
+    _ collectionView: UICollectionView,
+    didSelectItemAt indexPath: IndexPath
+  ) {
+    let eventDetailVC = EventDetailViewController()
+    eventDetailVC.game.game = model.games[indexPath.row]
+    navigationController?.pushViewController(eventDetailVC, animated: true)
   }
 }
 

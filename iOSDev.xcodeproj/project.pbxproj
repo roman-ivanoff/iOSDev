@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDACA81F2AFEAE0700F3E297 /* NavTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA81E2AFEAE0700F3E297 /* NavTitleLabel.swift */; };
+		FDACA8222AFEB2FD00F3E297 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA8212AFEB2FD00F3E297 /* BackButton.swift */; };
+		FDACA8242AFEB47500F3E297 /* BallsBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA8232AFEB47500F3E297 /* BallsBackgroundView.swift */; };
+		FDACA8262AFEBC7000F3E297 /* GameInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA8252AFEBC7000F3E297 /* GameInfoView.swift */; };
+		FDAF655D2AFE850100A98897 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF655C2AFE850100A98897 /* EventDetailViewController.swift */; };
+		FDAF65602AFE852300A98897 /* EventDetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF655F2AFE852300A98897 /* EventDetailContentView.swift */; };
+		FDAF65622AFE85D700A98897 /* EventDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF65612AFE85D700A98897 /* EventDetailModel.swift */; };
 		FDB12B4D2AFC2E0300890257 /* PreloaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B4C2AFC2E0300890257 /* PreloaderContentView.swift */; };
 		FDB12B502AFC302F00890257 /* Applyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B4F2AFC302F00890257 /* Applyable.swift */; };
 		FDB12B532AFC366F00890257 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B522AFC366F00890257 /* MainViewController.swift */; };
@@ -40,6 +47,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FDACA81E2AFEAE0700F3E297 /* NavTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTitleLabel.swift; sourceTree = "<group>"; };
+		FDACA8212AFEB2FD00F3E297 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		FDACA8232AFEB47500F3E297 /* BallsBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallsBackgroundView.swift; sourceTree = "<group>"; };
+		FDACA8252AFEBC7000F3E297 /* GameInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoView.swift; sourceTree = "<group>"; };
+		FDAF655C2AFE850100A98897 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		FDAF655F2AFE852300A98897 /* EventDetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailContentView.swift; sourceTree = "<group>"; };
+		FDAF65612AFE85D700A98897 /* EventDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailModel.swift; sourceTree = "<group>"; };
 		FDB12B4C2AFC2E0300890257 /* PreloaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderContentView.swift; sourceTree = "<group>"; };
 		FDB12B4F2AFC302F00890257 /* Applyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applyable.swift; sourceTree = "<group>"; };
 		FDB12B522AFC366F00890257 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +99,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FDACA8202AFEB2E300F3E297 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				FDACA81E2AFEAE0700F3E297 /* NavTitleLabel.swift */,
+				FDACA8212AFEB2FD00F3E297 /* BackButton.swift */,
+				FDACA8252AFEBC7000F3E297 /* GameInfoView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		FDAF655B2AFE84F000A98897 /* EventDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FDAF655E2AFE851100A98897 /* View */,
+				FDAF655C2AFE850100A98897 /* EventDetailViewController.swift */,
+			);
+			path = EventDetail;
+			sourceTree = "<group>";
+		};
+		FDAF655E2AFE851100A98897 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDAF655F2AFE852300A98897 /* EventDetailContentView.swift */,
+				FDACA8232AFEB47500F3E297 /* BallsBackgroundView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FDB12B492AFC2BEA00890257 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +218,7 @@
 				FDB12B732AFCF8BD00890257 /* StatisticModel.swift */,
 				FDB12B752AFCFC1400890257 /* TestData.swift */,
 				FDB12B772AFD0D0700890257 /* MainModel.swift */,
+				FDAF65612AFE85D700A98897 /* EventDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,12 +258,14 @@
 		FDD6E6412AFC221600EA52F0 /* iOSDev */ = {
 			isa = PBXGroup;
 			children = (
-				FDB12B892AFD6B6900890257 /* Helper */,
-				FDB12B812AFD210500890257 /* Extension */,
+				FDACA8202AFEB2E300F3E297 /* CustomView */,
+				FDAF655B2AFE84F000A98897 /* EventDetail */,
 				FDB12B512AFC365C00890257 /* Main */,
 				FDB12B4B2AFC2DD900890257 /* Preloader */,
 				FDB12B692AFCF58500890257 /* Model */,
 				FDB12B4E2AFC302100890257 /* Protocols */,
+				FDB12B812AFD210500890257 /* Extension */,
+				FDB12B892AFD6B6900890257 /* Helper */,
 				FDB12B4A2AFC2C2200890257 /* Resources */,
 				FDB12B492AFC2BEA00890257 /* Supporting Files */,
 			);
@@ -329,17 +374,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB12B7A2AFD14BD00890257 /* MainCollectionView.swift in Sources */,
+				FDACA8242AFEB47500F3E297 /* BallsBackgroundView.swift in Sources */,
 				FDB12B802AFD1EEB00890257 /* SIdentifiable.swift in Sources */,
+				FDACA81F2AFEAE0700F3E297 /* NavTitleLabel.swift in Sources */,
 				FDB12B742AFCF8BD00890257 /* StatisticModel.swift in Sources */,
 				FDB12B762AFCFC1400890257 /* TestData.swift in Sources */,
 				FDD6E6472AFC221600EA52F0 /* PreloaderViewController.swift in Sources */,
 				FDB12B7E2AFD1DEE00890257 /* MainCollectionViewCell.swift in Sources */,
+				FDAF655D2AFE850100A98897 /* EventDetailViewController.swift in Sources */,
+				FDACA8222AFEB2FD00F3E297 /* BackButton.swift in Sources */,
 				FDB12B4D2AFC2E0300890257 /* PreloaderContentView.swift in Sources */,
 				FDB12B6D2AFCF6B000890257 /* TeamModel.swift in Sources */,
 				FDB12B8B2AFD6B7300890257 /* Helper.swift in Sources */,
+				FDAF65602AFE852300A98897 /* EventDetailContentView.swift in Sources */,
+				FDAF65622AFE85D700A98897 /* EventDetailModel.swift in Sources */,
 				FDD6E6432AFC221600EA52F0 /* AppDelegate.swift in Sources */,
 				FDB12B532AFC366F00890257 /* MainViewController.swift in Sources */,
 				FDD6E6452AFC221600EA52F0 /* SceneDelegate.swift in Sources */,
+				FDACA8262AFEBC7000F3E297 /* GameInfoView.swift in Sources */,
 				FDB12B7C2AFD155300890257 /* MainCollectionViewHeader.swift in Sources */,
 				FDB12B852AFD5CE800890257 /* TeamNameLabel.swift in Sources */,
 				FDB12B782AFD0D0700890257 /* MainModel.swift in Sources */,

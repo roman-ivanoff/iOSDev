@@ -8,7 +8,7 @@
 import UIKit
 
 class MainContentView: UIView {
-  let tableView = MainCollectionView()
+  let collectionView = MainCollectionView()
 
   init() {
     super.init(frame: UIScreen.main.bounds)
@@ -21,13 +21,13 @@ class MainContentView: UIView {
   }
 
   private func addElements() {
-    addAutoLayoutSubviews(tableView)
+    addAutoLayoutSubviews(collectionView)
 
     NSLayoutConstraint.activate([
-      tableView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
-      tableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-      tableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-      tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
+      collectionView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
+      collectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+      collectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+      collectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
     ])
   }
 }
