@@ -20,10 +20,18 @@ struct TestData {
     "Leeds United",
     "Leicester City",
     "Liverpool",
-    "Manchester City"
+    "Manchester City",
+    "Manchester United",
+    "Newcastle United",
+    "Norwich City",
+    "Southampton",
+    "Tottenham Hotspur",
+    "Watford",
+    "West Ham United",
+    "Wolverhampton Wanderers"
   ]
 
-  func randomStatistic() -> Statistic {
+  private func randomStatistic() -> Statistic {
     return Statistic(
       ballProfessional: "\(Int.random(in: 0...70))%",
       goalAttempts: "\(Int.random(in: 0...15))",
@@ -37,7 +45,7 @@ struct TestData {
     )
   }
 
-  func generatePreviousGame(homeTeam: Team, guestTeam: Team) -> Game {
+  private func generatePreviousGame(homeTeam: Team, guestTeam: Team) -> Game {
     return Game(
       gameCondition: .finished,
       startTime: "2023-11-01",
@@ -53,7 +61,7 @@ struct TestData {
     )
   }
 
-  func generateRandomConditionGame() -> GameCondition {
+  private func generateRandomConditionGame() -> GameCondition {
     switch Int.random(in: 0...2) {
     case 0: return .finished
     case 1: return .live
@@ -62,7 +70,7 @@ struct TestData {
     }
   }
 
-  func generate() {
+  func generate() -> [Game] {
     var games: [Game] = []
 
     for _ in 1...15 {
@@ -79,11 +87,11 @@ struct TestData {
 
       let game = Game(
         gameCondition: generateRandomConditionGame(),
-        startTime: "12:00 PM",
+        startTime: "12:00",
         homeTeam: homeTeam,
         guestTeam: guestTeam,
         league: "English Premier League",
-        score: "\(Int.random(in: 0...5)) - \(Int.random(in: 0...5))",
+        score: "\(Int.random(in: 0...5)) : \(Int.random(in: 0...5))",
         time: "90'",
         date: "2023-11-09",
         h2h: h2hGames,
@@ -93,5 +101,7 @@ struct TestData {
 
       games.append(game)
     }
+
+    return games
   }
 }

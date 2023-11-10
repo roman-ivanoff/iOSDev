@@ -8,6 +8,8 @@
 import UIKit
 
 class MainContentView: UIView {
+  let tableView = MainCollectionView()
+
   init() {
     super.init(frame: UIScreen.main.bounds)
     backgroundColor = UIColor(named: "backgroundColor")
@@ -19,6 +21,13 @@ class MainContentView: UIView {
   }
 
   private func addElements() {
+    addAutoLayoutSubviews(tableView)
 
+    NSLayoutConstraint.activate([
+      tableView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
+      tableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+      tableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+      tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
+    ])
   }
 }

@@ -24,6 +24,14 @@
 		FDB12B702AFCF7A100890257 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDB12B722AFCF7A100890257 /* Localizable.strings */; };
 		FDB12B742AFCF8BD00890257 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B732AFCF8BD00890257 /* StatisticModel.swift */; };
 		FDB12B762AFCFC1400890257 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B752AFCFC1400890257 /* TestData.swift */; };
+		FDB12B782AFD0D0700890257 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B772AFD0D0700890257 /* MainModel.swift */; };
+		FDB12B7A2AFD14BD00890257 /* MainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B792AFD14BD00890257 /* MainCollectionView.swift */; };
+		FDB12B7C2AFD155300890257 /* MainCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B7B2AFD155300890257 /* MainCollectionViewHeader.swift */; };
+		FDB12B7E2AFD1DEE00890257 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B7D2AFD1DEE00890257 /* MainCollectionViewCell.swift */; };
+		FDB12B802AFD1EEB00890257 /* SIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B7F2AFD1EEB00890257 /* SIdentifiable.swift */; };
+		FDB12B832AFD211100890257 /* UIView+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B822AFD211100890257 /* UIView+Configuration.swift */; };
+		FDB12B852AFD5CE800890257 /* TeamNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B842AFD5CE800890257 /* TeamNameLabel.swift */; };
+		FDB12B8B2AFD6B7300890257 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB12B8A2AFD6B7300890257 /* Helper.swift */; };
 		FDD6E6432AFC221600EA52F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E6422AFC221600EA52F0 /* AppDelegate.swift */; };
 		FDD6E6452AFC221600EA52F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E6442AFC221600EA52F0 /* SceneDelegate.swift */; };
 		FDD6E6472AFC221600EA52F0 /* PreloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E6462AFC221600EA52F0 /* PreloaderViewController.swift */; };
@@ -49,6 +57,14 @@
 		FDB12B712AFCF7A100890257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FDB12B732AFCF8BD00890257 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		FDB12B752AFCFC1400890257 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		FDB12B772AFD0D0700890257 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		FDB12B792AFD14BD00890257 /* MainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionView.swift; sourceTree = "<group>"; };
+		FDB12B7B2AFD155300890257 /* MainCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewHeader.swift; sourceTree = "<group>"; };
+		FDB12B7D2AFD1DEE00890257 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		FDB12B7F2AFD1EEB00890257 /* SIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIdentifiable.swift; sourceTree = "<group>"; };
+		FDB12B822AFD211100890257 /* UIView+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Configuration.swift"; sourceTree = "<group>"; };
+		FDB12B842AFD5CE800890257 /* TeamNameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamNameLabel.swift; sourceTree = "<group>"; };
+		FDB12B8A2AFD6B7300890257 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FDD6E63F2AFC221600EA52F0 /* iOSDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD6E6422AFC221600EA52F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD6E6442AFC221600EA52F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				FDB12B4F2AFC302F00890257 /* Applyable.swift */,
+				FDB12B7F2AFD1EEB00890257 /* SIdentifiable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -128,6 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				FDB12B562AFC3AA100890257 /* MainContentView.swift */,
+				FDB12B792AFD14BD00890257 /* MainCollectionView.swift */,
+				FDB12B7B2AFD155300890257 /* MainCollectionViewHeader.swift */,
+				FDB12B7D2AFD1DEE00890257 /* MainCollectionViewCell.swift */,
+				FDB12B842AFD5CE800890257 /* TeamNameLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,8 +175,25 @@
 				FDB12B6C2AFCF6B000890257 /* TeamModel.swift */,
 				FDB12B732AFCF8BD00890257 /* StatisticModel.swift */,
 				FDB12B752AFCFC1400890257 /* TestData.swift */,
+				FDB12B772AFD0D0700890257 /* MainModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FDB12B812AFD210500890257 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDB12B822AFD211100890257 /* UIView+Configuration.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FDB12B892AFD6B6900890257 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FDB12B8A2AFD6B7300890257 /* Helper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		FDD6E6362AFC221500EA52F0 = {
@@ -177,6 +215,8 @@
 		FDD6E6412AFC221600EA52F0 /* iOSDev */ = {
 			isa = PBXGroup;
 			children = (
+				FDB12B892AFD6B6900890257 /* Helper */,
+				FDB12B812AFD210500890257 /* Extension */,
 				FDB12B512AFC365C00890257 /* Main */,
 				FDB12B4B2AFC2DD900890257 /* Preloader */,
 				FDB12B692AFCF58500890257 /* Model */,
@@ -288,17 +328,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB12B7A2AFD14BD00890257 /* MainCollectionView.swift in Sources */,
+				FDB12B802AFD1EEB00890257 /* SIdentifiable.swift in Sources */,
 				FDB12B742AFCF8BD00890257 /* StatisticModel.swift in Sources */,
 				FDB12B762AFCFC1400890257 /* TestData.swift in Sources */,
 				FDD6E6472AFC221600EA52F0 /* PreloaderViewController.swift in Sources */,
+				FDB12B7E2AFD1DEE00890257 /* MainCollectionViewCell.swift in Sources */,
 				FDB12B4D2AFC2E0300890257 /* PreloaderContentView.swift in Sources */,
 				FDB12B6D2AFCF6B000890257 /* TeamModel.swift in Sources */,
+				FDB12B8B2AFD6B7300890257 /* Helper.swift in Sources */,
 				FDD6E6432AFC221600EA52F0 /* AppDelegate.swift in Sources */,
 				FDB12B532AFC366F00890257 /* MainViewController.swift in Sources */,
 				FDD6E6452AFC221600EA52F0 /* SceneDelegate.swift in Sources */,
+				FDB12B7C2AFD155300890257 /* MainCollectionViewHeader.swift in Sources */,
+				FDB12B852AFD5CE800890257 /* TeamNameLabel.swift in Sources */,
+				FDB12B782AFD0D0700890257 /* MainModel.swift in Sources */,
 				FDB12B6B2AFCF59400890257 /* GameModel.swift in Sources */,
 				FDB12B502AFC302F00890257 /* Applyable.swift in Sources */,
 				FDB12B572AFC3AA100890257 /* MainContentView.swift in Sources */,
+				FDB12B832AFD211100890257 /* UIView+Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

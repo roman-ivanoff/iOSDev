@@ -21,7 +21,9 @@ class PreloaderViewController: UIViewController {
   }
 
   private func pushToMainAfter(delay seconds: Double) {
+    let testData = TestData()
     let mainVC = MainViewController()
+    mainVC.model.games = testData.generate()
     DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
       self.navigationController?.pushViewController(mainVC, animated: true)
     }

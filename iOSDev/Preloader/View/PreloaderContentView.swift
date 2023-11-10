@@ -24,8 +24,7 @@ class PreloaderContentView: UIView {
   }
 
   private func addElements() {
-    self.addSubview(loaderImageView)
-    loaderImageView.translatesAutoresizingMaskIntoConstraints = false
+    addAutoLayoutSubviews(loaderImageView)
 
     NSLayoutConstraint.activate([
       loaderImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
