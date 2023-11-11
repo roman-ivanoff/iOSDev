@@ -19,6 +19,11 @@
 		FDACA8352AFFB00900F3E297 /* H2HCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA8342AFFB00900F3E297 /* H2HCollectionViewCell.swift */; };
 		FDACA8372AFFB27500F3E297 /* H2HTeamNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA8362AFFB27500F3E297 /* H2HTeamNameLabel.swift */; };
 		FDACA8392AFFDCAE00F3E297 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA8382AFFDCAE00F3E297 /* ScoreView.swift */; };
+		FDACA83B2AFFF71F00F3E297 /* StatisticDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA83A2AFFF71F00F3E297 /* StatisticDetailModel.swift */; };
+		FDACA83E2AFFF80600F3E297 /* StatisticContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA83D2AFFF80600F3E297 /* StatisticContentView.swift */; };
+		FDACA8402AFFF89400F3E297 /* StatisticCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA83F2AFFF89400F3E297 /* StatisticCollectionView.swift */; };
+		FDACA8422AFFF8CB00F3E297 /* StatisticCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA8412AFFF8CB00F3E297 /* StatisticCollectionViewCell.swift */; };
+		FDACA8442B0003FA00F3E297 /* StatLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACA8432B0003FA00F3E297 /* StatLabel.swift */; };
 		FDAF655D2AFE850100A98897 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF655C2AFE850100A98897 /* EventDetailViewController.swift */; };
 		FDAF65602AFE852300A98897 /* EventDetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF655F2AFE852300A98897 /* EventDetailContentView.swift */; };
 		FDAF65622AFE85D700A98897 /* EventDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF65612AFE85D700A98897 /* EventDetailModel.swift */; };
@@ -67,6 +72,11 @@
 		FDACA8342AFFB00900F3E297 /* H2HCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H2HCollectionViewCell.swift; sourceTree = "<group>"; };
 		FDACA8362AFFB27500F3E297 /* H2HTeamNameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H2HTeamNameLabel.swift; sourceTree = "<group>"; };
 		FDACA8382AFFDCAE00F3E297 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		FDACA83A2AFFF71F00F3E297 /* StatisticDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticDetailModel.swift; sourceTree = "<group>"; };
+		FDACA83D2AFFF80600F3E297 /* StatisticContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticContentView.swift; sourceTree = "<group>"; };
+		FDACA83F2AFFF89400F3E297 /* StatisticCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCollectionView.swift; sourceTree = "<group>"; };
+		FDACA8412AFFF8CB00F3E297 /* StatisticCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCollectionViewCell.swift; sourceTree = "<group>"; };
+		FDACA8432B0003FA00F3E297 /* StatLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatLabel.swift; sourceTree = "<group>"; };
 		FDAF655C2AFE850100A98897 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		FDAF655F2AFE852300A98897 /* EventDetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailContentView.swift; sourceTree = "<group>"; };
 		FDAF65612AFE85D700A98897 /* EventDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailModel.swift; sourceTree = "<group>"; };
@@ -137,6 +147,7 @@
 		FDACA82A2AFF95F300F3E297 /* Statistic */ = {
 			isa = PBXGroup;
 			children = (
+				FDACA83C2AFFF7FB00F3E297 /* View */,
 				FDACA82B2AFF961100F3E297 /* StatisticViewController.swift */,
 			);
 			path = Statistic;
@@ -150,6 +161,17 @@
 				FDACA8342AFFB00900F3E297 /* H2HCollectionViewCell.swift */,
 				FDACA8362AFFB27500F3E297 /* H2HTeamNameLabel.swift */,
 				FDACA8382AFFDCAE00F3E297 /* ScoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDACA83C2AFFF7FB00F3E297 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDACA83D2AFFF80600F3E297 /* StatisticContentView.swift */,
+				FDACA83F2AFFF89400F3E297 /* StatisticCollectionView.swift */,
+				FDACA8412AFFF8CB00F3E297 /* StatisticCollectionViewCell.swift */,
+				FDACA8432B0003FA00F3E297 /* StatLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +287,7 @@
 				FDB12B772AFD0D0700890257 /* MainModel.swift */,
 				FDAF65612AFE85D700A98897 /* EventDetailModel.swift */,
 				FDACA8302AFFA97300F3E297 /* H2HModel.swift */,
+				FDACA83A2AFFF71F00F3E297 /* StatisticDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -422,7 +445,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB12B7A2AFD14BD00890257 /* MainCollectionView.swift in Sources */,
+				FDACA8422AFFF8CB00F3E297 /* StatisticCollectionViewCell.swift in Sources */,
 				FDACA8242AFEB47500F3E297 /* BallsBackgroundView.swift in Sources */,
+				FDACA8402AFFF89400F3E297 /* StatisticCollectionView.swift in Sources */,
 				FDB12B802AFD1EEB00890257 /* SIdentifiable.swift in Sources */,
 				FDACA8392AFFDCAE00F3E297 /* ScoreView.swift in Sources */,
 				FDACA81F2AFEAE0700F3E297 /* NavTitleLabel.swift in Sources */,
@@ -432,9 +457,12 @@
 				FDD6E6472AFC221600EA52F0 /* PreloaderViewController.swift in Sources */,
 				FDACA8332AFFAFC500F3E297 /* H2HCollectionView.swift in Sources */,
 				FDB12B7E2AFD1DEE00890257 /* MainCollectionViewCell.swift in Sources */,
+				FDACA8442B0003FA00F3E297 /* StatLabel.swift in Sources */,
 				FDAF655D2AFE850100A98897 /* EventDetailViewController.swift in Sources */,
 				FDACA8222AFEB2FD00F3E297 /* BackButton.swift in Sources */,
+				FDACA83B2AFFF71F00F3E297 /* StatisticDetailModel.swift in Sources */,
 				FDB12B4D2AFC2E0300890257 /* PreloaderContentView.swift in Sources */,
+				FDACA83E2AFFF80600F3E297 /* StatisticContentView.swift in Sources */,
 				FDB12B6D2AFCF6B000890257 /* TeamModel.swift in Sources */,
 				FDB12B8B2AFD6B7300890257 /* Helper.swift in Sources */,
 				FDAF65602AFE852300A98897 /* EventDetailContentView.swift in Sources */,

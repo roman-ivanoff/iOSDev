@@ -24,6 +24,11 @@ class EventDetailViewController: UIViewController {
   private lazy var statisticViewController: StatisticViewController = {
     let viewController = StatisticViewController()
 
+    viewController.model.homeTeamStatistic =
+    game.game.gameCondition == .notStarted ? game.emptyStatistic : game.game.homeTeamStatistic
+    viewController.model.guestTeamStatistic =
+    game.game.gameCondition == .notStarted ? game.emptyStatistic : game.game.guestTeamStatistic
+
     add(asChildViewController: viewController)
 
     return viewController
