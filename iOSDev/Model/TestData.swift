@@ -48,7 +48,7 @@ struct TestData {
   private func generatePreviousGame(homeTeam: Team, guestTeam: Team) -> Game {
     return Game(
       gameCondition: .finished,
-      startTime: "2023-11-01",
+      startTime: "12:00",
       homeTeam: homeTeam,
       guestTeam: guestTeam,
       league: "Premier League",
@@ -81,7 +81,7 @@ struct TestData {
       let guestTeam = Team(name: guestTeamName, logo: "chelseaLogo")
 
       var h2hGames: [Game] = []
-      for _ in 1...5 {
+      for _ in 1...6 {
         h2hGames.append(generatePreviousGame(homeTeam: homeTeam, guestTeam: guestTeam))
       }
 

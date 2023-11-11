@@ -111,7 +111,7 @@ class GameInfoView: UIView {
     leagueLabel.textColor = leagueLabelTextColor
     homeTeamNameLabel.font = homeTeamNameLabel.font.withSize(teamNameLabelFontSize)
     guestTeamNameLabel.font = homeTeamNameLabel.font.withSize(teamNameLabelFontSize)
-    liveOrDateLabel.font = .systemFont(ofSize: liveOrDateLabelFontSize, weight: .regular)
+    liveOrDateLabel.font = .systemFont(ofSize: liveOrDateLabelFontSize, weight: .semibold)
     minuteLabel.textColor = minuteLabelColor
   }
 
@@ -170,22 +170,6 @@ class GameInfoView: UIView {
     ])
   }
 
-  private func setColorToDate(
-    string: String,
-    count: Int,
-    color: UIColor
-  ) -> NSMutableAttributedString {
-    let mutableString = NSMutableAttributedString(string: string)
-
-    mutableString.addAttribute(
-      NSAttributedString.Key.foregroundColor,
-      value: color,
-      range: NSRange(location: 0, length: count)
-    )
-
-    return mutableString
-  }
-
   func configure(with game: Game) {
     leagueLabel.text = game.league
     homeTeamLogoImageView.image = UIImage(named: game.homeTeam.logo)
@@ -197,10 +181,12 @@ class GameInfoView: UIView {
     let gameDay = Helper.shared.convertDate(date: game.date)
     let gameTime = game.startTime
     let gameDate = gameDay + ", " + gameTime
-    liveOrDateLabel.attributedText = setColorToDate(
+    liveOrDateLabel.attributedText = Helper.shared.getMutableStringWith(
       string: gameDate,
       count: gameDay.count+1,
-      color: UIColor(named: "greyColor") ?? .yellow
+      color: UIColor(named: "greyColor") ?? .yellow,
+      fontSize: liveOrDateLabelFontSize,
+      fontWeight: .regular
     )
 
     switch game.gameCondition {

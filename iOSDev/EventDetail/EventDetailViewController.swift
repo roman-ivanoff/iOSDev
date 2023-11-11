@@ -8,15 +8,33 @@
 import UIKit
 
 class EventDetailViewController: UIViewController {
-  let contentView = EventDetailContentView()
+  private let contentView = EventDetailContentView()
   var game = EventDetail()
-  let backButton = BackButton()
+  private let backButton = BackButton()
+
+  private lazy var h2hViewController: H2HViewController = {
+    let viewController = H2HViewController()
+    viewController.model.h2h = game.game.h2h
+
+    add(asChildViewController: viewController)
+
+    return viewController
+  }()
+
+  private lazy var statisticViewController: StatisticViewController = {
+    let viewController = StatisticViewController()
+
+    add(asChildViewController: viewController)
+
+    return viewController
+  }()
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     setupNavbar()
     contentView.configure(with: game.game)
+    setupView()
   }
 
   override func loadView() {
@@ -32,5 +50,40 @@ class EventDetailViewController: UIViewController {
 
   @objc private func popVC(_ sender: UIButton) {
     navigationController?.popViewController(animated: true)
+  }
+
+  private func setupView() {
+    contentView.segmentedContol.addTarget(self, action: #selector(selectionDidChange(_:)), for: .valueChanged)
+    updateView()
+  }
+
+  @objc private func selectionDidChange(_ sender: UISegmentedControl) {
+    updateView()
+  }
+
+  private func updateView() {
+    if contentView.segmentedContol.selectedSegmentIndex == 0 {
+      remove(asChildViewController: statisticViewController)
+      add(asChildViewController: h2hViewController)
+    } else {
+      remove(asChildViewController: h2hViewController)
+      add(asChildViewController: statisticViewController)
+    }
+  }
+
+  private func add(asChildViewController viewController: UIViewController) {
+    addChild(viewController)
+
+    contentView.addToStatisticViewAndSetConstraints(view: viewController.view)
+
+    viewController.didMove(toParent: self)
+  }
+
+  private func remove(asChildViewController viewController: UIViewController) {
+    viewController.willMove(toParent: nil)
+
+    viewController.view.removeFromSuperview()
+
+    viewController.removeFromParent()
   }
 }
