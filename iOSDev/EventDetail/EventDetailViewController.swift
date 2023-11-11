@@ -8,6 +8,7 @@
 import UIKit
 
 class EventDetailViewController: UIViewController {
+  // MARK: - Properties
   private let contentView = EventDetailContentView()
   var game = EventDetail()
   private let backButton = BackButton()
@@ -34,6 +35,7 @@ class EventDetailViewController: UIViewController {
     return viewController
   }()
 
+  // MARK: - Lifecycle Methods
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -46,6 +48,7 @@ class EventDetailViewController: UIViewController {
     view = contentView
   }
 
+  // MARK: - Private Methods
   private func setupNavbar() {
     navigationItem.titleView = NavTitleLabel()
 

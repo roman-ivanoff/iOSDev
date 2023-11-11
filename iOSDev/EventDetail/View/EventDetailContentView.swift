@@ -8,16 +8,28 @@
 import UIKit
 
 class EventDetailContentView: UIView {
+  // MARK: - Properties
   private let ballsBackgroundView = BallsBackgroundView()
   private let gameInfoView = GameInfoView(isCell: false)
-  let segmentedContol = UISegmentedControl(items: ["H2H", "Statistic"]).apply {
+  let segmentedContol = UISegmentedControl(items: [
+    NSLocalizedString("h2h", comment: ""),
+    NSLocalizedString("statistic", comment: "")
+  ]).apply {
     $0.selectedSegmentIndex = 0
+    $0.selectedSegmentTintColor = UIColor(named: "orangeColor")
+    $0.setTitleTextAttributes(
+      [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .medium)], for: .normal
+    )
+    $0.setTitleTextAttributes(
+      [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .medium)], for: .selected
+    )
   }
 
   private let statisticView = UIView().apply {
     $0.backgroundColor = UIColor(named: "secondaryBackgroundColor")
   }
 
+  // MARK: - init
   init() {
     super.init(frame: UIScreen.main.bounds)
     backgroundColor = UIColor(named: "backgroundColor")
@@ -28,6 +40,7 @@ class EventDetailContentView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Public Methods
   func configure(with game: Game) {
     gameInfoView.configure(with: game)
   }
@@ -37,12 +50,13 @@ class EventDetailContentView: UIView {
 
     NSLayoutConstraint.activate([
       view.topAnchor.constraint(equalTo: statisticView.topAnchor, constant: 16),
-      view.leadingAnchor.constraint(equalTo: statisticView.leadingAnchor, constant: 12),
-      view.trailingAnchor.constraint(equalTo: statisticView.trailingAnchor, constant: -12),
+      view.leadingAnchor.constraint(equalTo: statisticView.leadingAnchor, constant: 16),
+      view.trailingAnchor.constraint(equalTo: statisticView.trailingAnchor, constant: -16),
       view.bottomAnchor.constraint(equalTo: statisticView.bottomAnchor, constant: -12)
     ])
   }
 
+  // MARK: - Private Methods
   private func addElements() {
     addAutoLayoutSubviews(ballsBackgroundView, gameInfoView, segmentedContol, statisticView)
 
@@ -57,11 +71,12 @@ class EventDetailContentView: UIView {
       gameInfoView.bottomAnchor.constraint(equalTo: ballsBackgroundView.bottomAnchor, constant: -4),
       gameInfoView.heightAnchor.constraint(equalToConstant: 175),
 
-      segmentedContol.topAnchor.constraint(equalTo: ballsBackgroundView.bottomAnchor, constant: 20),
+      segmentedContol.topAnchor.constraint(equalTo: ballsBackgroundView.bottomAnchor, constant: 26),
       segmentedContol.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-      segmentedContol.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+      segmentedContol.widthAnchor.constraint(equalToConstant: 164),
+      segmentedContol.heightAnchor.constraint(equalToConstant: 32),
 
-      statisticView.topAnchor.constraint(equalTo: segmentedContol.bottomAnchor, constant: 20),
+      statisticView.topAnchor.constraint(equalTo: segmentedContol.bottomAnchor, constant: 26),
       statisticView.leadingAnchor.constraint(equalTo: leadingAnchor),
       statisticView.trailingAnchor.constraint(equalTo: trailingAnchor),
       statisticView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -65)

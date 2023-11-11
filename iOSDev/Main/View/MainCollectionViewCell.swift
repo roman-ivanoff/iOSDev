@@ -8,8 +8,10 @@
 import UIKit
 
 class MainCollectionViewCell: UICollectionViewCell, SIdentifiable {
+  // MARK: - Properties
   private let gameInfoView = GameInfoView(isCell: true)
 
+  // MARK: - init
   override init(frame: CGRect) {
     super.init(frame: frame)
 
@@ -21,6 +23,7 @@ class MainCollectionViewCell: UICollectionViewCell, SIdentifiable {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Private Methods
   private func setup() {
     backgroundColor = UIColor(named: "secondaryBackgroundColor")
 
@@ -41,6 +44,7 @@ class MainCollectionViewCell: UICollectionViewCell, SIdentifiable {
     ])
   }
 
+  // MARK: - Public Methods
   func configure(with game: Game) {
     gameInfoView.configure(with: game)
 

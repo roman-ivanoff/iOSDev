@@ -8,6 +8,7 @@
 import UIKit
 
 class GameInfoView: UIView {
+  // MARK: - Properties
   var isCell = false
   private var leagueLabelFontSize: CGFloat = 14
   private var leagueLabelTextColor: UIColor = .white
@@ -73,6 +74,7 @@ class GameInfoView: UIView {
     $0.alignment = .center
   }
 
+  // MARK: - init
   required init(isCell: Bool) {
     super.init(frame: .zero)
     self.isCell = isCell
@@ -85,11 +87,13 @@ class GameInfoView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Override Methods
   override func layoutSubviews() {
     super.layoutSubviews()
     setLiveCircleView()
   }
 
+  // MARK: - Private Methods
   private func setElementAttributes() {
     if isCell {
       leagueLabelFontSize = 10
@@ -170,6 +174,7 @@ class GameInfoView: UIView {
     ])
   }
 
+  // MARK: - Public Methods
   func configure(with game: Game) {
     leagueLabel.text = game.league
     homeTeamLogoImageView.image = UIImage(named: game.homeTeam.logo)

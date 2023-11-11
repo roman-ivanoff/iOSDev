@@ -8,9 +8,11 @@
 import UIKit
 
 class H2HViewController: UIViewController {
+  // MARK: - Properties
   private let contentView = H2HContentView()
   let model = H2HModel()
 
+  // MARK: - Lifecycle Methods
   override func viewDidLoad() {
     super.viewDidLoad()
     contentView.collectionView.delegate = self
@@ -22,10 +24,10 @@ class H2HViewController: UIViewController {
   }
 }
 
-extension H2HViewController: UICollectionViewDelegate {
+// MARK: - UICollectionViewDelegate
+extension H2HViewController: UICollectionViewDelegate {}
 
-}
-
+// MARK: - UICollectionViewDataSource
 extension H2HViewController: UICollectionViewDataSource {
   func collectionView(
     _ collectionView: UICollectionView,
@@ -53,6 +55,7 @@ extension H2HViewController: UICollectionViewDataSource {
   }
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
 extension H2HViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(
     _ collectionView: UICollectionView,

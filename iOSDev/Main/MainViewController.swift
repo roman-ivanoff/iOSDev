@@ -8,9 +8,11 @@
 import UIKit
 
 class MainViewController: UIViewController {
+  // MARK: - Properties
   private let contentView = MainContentView()
   var model = MainModel()
 
+  // MARK: - Lifecycle Methods
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -23,11 +25,13 @@ class MainViewController: UIViewController {
     view = contentView
   }
 
+  // MARK: - Private Methods
   private func setupNavbar() {
     navigationItem.hidesBackButton = true
   }
 }
 
+// MARK: - UICollectionViewDelegate
 extension MainViewController: UICollectionViewDelegate {
   func collectionView(
     _ collectionView: UICollectionView,
@@ -57,6 +61,7 @@ extension MainViewController: UICollectionViewDelegate {
   }
 }
 
+// MARK: - UICollectionViewDataSource
 extension MainViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     model.games.count
@@ -78,6 +83,7 @@ extension MainViewController: UICollectionViewDataSource {
   }
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
 extension MainViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(
     _ collectionView: UICollectionView,

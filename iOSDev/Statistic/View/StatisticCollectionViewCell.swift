@@ -8,6 +8,7 @@
 import UIKit
 
 class StatisticCollectionViewCell: UICollectionViewCell, SIdentifiable {
+  // MARK: - Properties
   private let homeTeamStatLabel = StatLabel().apply {
     $0.textAlignment = .left
   }
@@ -26,6 +27,7 @@ class StatisticCollectionViewCell: UICollectionViewCell, SIdentifiable {
     $0.spacing = 8
   }
 
+  // MARK: - init
   override init(frame: CGRect) {
     super.init(frame: frame)
 
@@ -42,6 +44,7 @@ class StatisticCollectionViewCell: UICollectionViewCell, SIdentifiable {
     backgroundColor = UIColor(named: "secondaryBackgroundColor")
   }
 
+  // MARK: - Private Methods
   private func addElements() {
     addAutoLayoutSubviews(cellStackView)
     cellStackView.addArrangedSubview(homeTeamStatLabel)
@@ -55,6 +58,7 @@ class StatisticCollectionViewCell: UICollectionViewCell, SIdentifiable {
     ])
   }
 
+  // MARK: - Public Methods
   func configure(homeTeamStat: String, guestTeamStat: String, title: String) {
     homeTeamStatLabel.text = homeTeamStat
     guestTeamStatLabel.text = guestTeamStat

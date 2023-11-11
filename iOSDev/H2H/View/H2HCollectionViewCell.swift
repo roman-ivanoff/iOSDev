@@ -8,6 +8,7 @@
 import UIKit
 
 class H2HCollectionViewCell: UICollectionViewCell, SIdentifiable {
+  // MARK: - Properties
   private let homeTeamNameLabel = H2HTeamNameLabel()
   private let guestTeamNameLabel = H2HTeamNameLabel()
   private let dateLabel = UILabel().apply {
@@ -17,6 +18,7 @@ class H2HCollectionViewCell: UICollectionViewCell, SIdentifiable {
 
   private let scoreView = ScoreView()
 
+  // MARK: - init
   override init(frame: CGRect) {
     super.init(frame: frame)
 
@@ -28,6 +30,7 @@ class H2HCollectionViewCell: UICollectionViewCell, SIdentifiable {
     fatalError("init(coder:) has not been implemented")
   }
 
+  // MARK: - Private Methods
   private func setup() {
     backgroundColor = UIColor(named: "h2hCellBackgroundColor")
     layer.masksToBounds = false
@@ -60,6 +63,7 @@ class H2HCollectionViewCell: UICollectionViewCell, SIdentifiable {
     ])
   }
 
+  // MARK: - Public Methods
   func configure(with game: Game) {
     let gameDay = Helper.shared.convertDate(date: game.date)
     let gameTime = game.startTime

@@ -8,18 +8,20 @@
 import UIKit
 
 class PreloaderViewController: UIViewController {
+  // MARK: - Properties
   private let contentView = PreloaderContentView()
 
+  // MARK: - Lifecycle Methods
   override func viewDidLoad() {
     super.viewDidLoad()
-    // TODO: change time
-    pushToMainAfter(delay: 1)
+    pushToMainAfter(delay: 5)
   }
 
   override func loadView() {
     view = contentView
   }
 
+  // MARK: - Private Methods
   private func pushToMainAfter(delay seconds: Double) {
     let testData = TestData()
     let mainVC = MainViewController()

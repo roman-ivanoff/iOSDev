@@ -8,9 +8,11 @@
 import UIKit
 
 class StatisticViewController: UIViewController {
+  // MARK: - Properties
   let model = StatisticDetail()
   private let contentView = StatisticContentView()
 
+  // MARK: - Lifecycle Methods
   override func viewDidLoad() {
     super.viewDidLoad()
     contentView.collectionView.delegate = self
@@ -22,10 +24,10 @@ class StatisticViewController: UIViewController {
   }
 }
 
-extension StatisticViewController: UICollectionViewDelegate {
+// MARK: - UICollectionViewDelegate
+extension StatisticViewController: UICollectionViewDelegate {}
 
-}
-
+// MARK: - UICollectionViewDataSource
 extension StatisticViewController: UICollectionViewDataSource {
   func collectionView(
     _ collectionView: UICollectionView,
@@ -57,6 +59,7 @@ extension StatisticViewController: UICollectionViewDataSource {
   }
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
 extension StatisticViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(
     _ collectionView: UICollectionView,
@@ -71,7 +74,7 @@ extension StatisticViewController: UICollectionViewDelegateFlowLayout {
     layout collectionViewLayout: UICollectionViewLayout,
     minimumLineSpacingForSectionAt section: Int
   ) -> CGFloat {
-    18
+    16
   }
 
   func collectionView(
@@ -79,6 +82,6 @@ extension StatisticViewController: UICollectionViewDelegateFlowLayout {
     layout collectionViewLayout: UICollectionViewLayout,
     minimumInteritemSpacingForSectionAt section: Int
   ) -> CGFloat {
-    18
+    16
   }
 }
