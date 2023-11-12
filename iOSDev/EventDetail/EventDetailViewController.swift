@@ -70,7 +70,7 @@ class EventDetailViewController: UIViewController {
   }
 
   private func updateView() {
-    if contentView.segmentedContol.selectedSegmentIndex == 0 {
+    if contentView.segmentedContol.selectedIndex == 0 {
       remove(asChildViewController: statisticViewController)
       add(asChildViewController: h2hViewController)
     } else {
